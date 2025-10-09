@@ -1,2 +1,4 @@
 # Study Spotter
-idk
+
+Study Spotter is designed to assist students with finding vacant seating inside Staffer Library
+
