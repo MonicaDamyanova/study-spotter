@@ -1,4 +1,0 @@
-{
-    "sketch": "seat_detection\\seat_detection.ino",
-    "board": "arduino:avr:unowifi"
-}
