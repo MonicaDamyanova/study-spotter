@@ -1,10 +1,13 @@
-void setup(){
-    pinMode(LED_BUILTIN, OUTPUT);
+const int fsrPin = A1;
+
+const int seatThreshold = 100;
+
+void initSeatSensor(){
+    pinMode(fsrPin, INPUT);
 }
 
-void loop(){
-    digitalWrite(LED_BUILTIN,HIGH);
-    delay(1000);
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(1000);
+bool isSeatOccupied(){
+    int seatValue = analogRead(fsrPin);
+
+    return(seatValue < seatThreshold);
 }
