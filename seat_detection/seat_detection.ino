@@ -1,6 +1,6 @@
 const int fsrPin = A1;
 
-const int seatThreshold = 100;
+const int seatThreshold = 650;
 
 void initSeatSensor(){
     pinMode(fsrPin, INPUT);
@@ -9,5 +9,5 @@ void initSeatSensor(){
 bool isSeatOccupied(){
     int seatValue = analogRead(fsrPin);
 
-    return(seatValue < seatThreshold);
+    return(seatValue > seatThreshold);
 }
