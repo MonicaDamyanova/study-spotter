@@ -1,0 +1,64 @@
+.FooterBackdrop{
+    background-color: #002452;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.FooterTop{
+    display: flex;
+    justify-content: left;
+    padding: 30px 30px;
+    border-bottom: 0.3px solid white;
+}
+
+.FooterBottom{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #002452;
+}
+
+.Land{
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 50%;              
+    transform: translateX(-50%);
+    color: white;
+    text-decoration: none;
+}
+
+.Land:hover{
+    opacity: 80%;
+}
+
+.AddressLocation{
+    color: white;
+    text-decoration: none;
+}
+
+.AddressLocation:hover{
+    opacity: 80%;
+}
+
+.Copyright{
+    color: white;
+    position: absolute;
+    right: 30px;
+}
+
+.QueensLogos{
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+

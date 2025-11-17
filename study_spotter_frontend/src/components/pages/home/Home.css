@@ -1,0 +1,58 @@
+.Spacer{
+    height: 300px;
+}
+
+
+.Title{
+    align-items: center;
+   
+    font-family: Calibri;
+    font-size: 80px;
+}
+
+.StaufferPicture{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.TitleClass{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.SubTitle{
+    padding: 0 80px;
+    line-height: 40px;
+    font-family: 'calibri';
+}
+
+.Backdrop{
+    background-color: rgb(214, 214, 214);
+    position: relative;
+    height: 200px;
+    width: 90%;
+    top: 80px;
+    border-radius: 20px;
+}
+
+.BackdropParent{
+    justify-content: center;
+    display: flex;
+    
+}
+
+.Suggestions{
+    position: relative;
+    text-align: center;
+    
+}
+
+.SuggestionsText{
+    position: relative;
+    top: 10px;
+    padding: 0px 80px;
+    text-align: center;
+}
