@@ -1,10 +1,26 @@
 import './Header.css'
 import logo from '../../assets/queens_logo.png'
 import { Link } from 'react-router-dom'
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Header(){
     const [isOpen, setIsOpen] = useState(false)
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+            setIsOpen(false);
+        }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+    };
+}, []);
+
 
     return(
         <header className = "Header">
@@ -22,11 +38,10 @@ function Header(){
                 <Link to="/" className = "Home">Home</Link>
                 <Link to="/FindSpot" className = "About">Find A Spot In Stauffer</Link>
             <div
-             className = "Dropdown"
-             onClick={() => setIsOpen(!isOpen)}
+             className="Dropdown" ref={dropdownRef}
              
                 >
-                <button className = "BookRoomButton">
+                <button className = "BookRoomButton" onClick={() => setIsOpen(!isOpen)}>
                     Book a Study Room▾
                 </button>
                 

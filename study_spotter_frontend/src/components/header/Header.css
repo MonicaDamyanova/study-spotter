@@ -55,6 +55,7 @@
     flex-direction: column;
     position: absolute;
     background-color: #002452;
+    z-index: 1000;
 }
 
 .BookRoomButton{

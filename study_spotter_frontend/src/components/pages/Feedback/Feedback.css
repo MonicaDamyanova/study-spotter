@@ -1,24 +1,54 @@
 .SignInBoxParent{
-    background-color: gray;
+    background-color: rgb(180, 179, 179);
     height: 500px;
     width: 40%;
     border-radius: 50px;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    
 }
 
 .Background{
+    flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
     display: flex;
     
 }
 
-.spacer{
-     height: 200px;
+.IssueBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    
 }
 
+.MaintenanceRequestFormTitle{
+    font-size: 30px;
+}
+
+
+.DescribeIssue{
+    width: 100%;
+    text-align: center;
+}
+
+.Floor{
+    width: 50%;
+    text-align: center;
+    height: 20px;
+}
+
+.SendRequestButton{
+    font-size: 19px;
+}
+
+
+
 .Spacer2{
-    height: 200px;
+    height: 100px;
 }

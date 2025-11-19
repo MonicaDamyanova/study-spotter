@@ -11,15 +11,24 @@ import Feedback from './components/pages/Feedback/Feedback';
 
 function App(){
   return (
-    <Router>
-      <Header />
-      <Routes>
+    <div className = "PageWrapper">
+      <Router>
+        <Header />
+
+      <div className = "MainContent">
+        <Routes>
         <Route path = "/" element = {<Home/>} />
         <Route path = "/FindSpot" element = {<FindSpot/>} />
         <Route path = "/Feedback" element = {<Feedback/>}/>
-      </Routes>
+        </Routes>
+
+
+      </div>
+      
       <Footer/>
     </Router>
+    </div>
+    
     
 
     

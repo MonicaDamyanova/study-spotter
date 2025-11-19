@@ -1,0 +1,11 @@
+.PageWrapper {
+  min-height: 100vh;        /* full screen height */
+  display: flex;
+  flex-direction: column;   /* stack: header → content → footer */
+}
+
+.MainContent {
+  flex: 1;                  /* pushes footer to bottom */
+  display: flex;
+  flex-direction: column;
+}

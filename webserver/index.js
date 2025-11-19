@@ -22,6 +22,11 @@ app.post('/server', (req, res) => {
   }
 })
 
+app.get('/seat', (req, res) => {
+  res.json({ seatOccupied });
+});
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })
