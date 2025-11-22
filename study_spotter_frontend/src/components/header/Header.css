@@ -1,119 +1,132 @@
-.Header{
-    background-color: #002452;
-    height: 100px;
-    display: flex;
-    align-items: center;
+.Header {
+  background-color: #002452;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
-.QueensLogo{
-    height: 100px;
+.QueensLogo {
+  height: 100px;
 }
 
-.QueensLogo:hover{
-    opacity: 80%;
+.QueensLogo:hover {
+  opacity: 80%;
 }
 
-.About{
-   text-decoration: none;
-   color: white;
-   font-size: 20px;
-   font-family: 'Volkhov';
-   line-height: 1;
+.About {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov";
+  line-height: 1;
 }
 
-.About:hover{
-   opacity: 80%;
+.About:hover {
+  opacity: 80%;
 }
 
-.Home{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Volkhov';
-    line-height: 1;
+.Home {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov";
+  line-height: 1;
 }
 
-.Home:hover{
-    opacity: 80%;
+.Home:hover {
+  opacity: 80%;
 }
 
-.NavElements{
-    justify-content: center;
-    display: flex;
-    gap: 60px;
-    flex: 1;
-    align-items: center;
+.NavElements {
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+  flex: 1;
+  align-items: center;
 }
 
-.Dropdown{
-    position: relative;
-    text-decoration: none;
+.Dropdown {
+  position: relative;
+  text-decoration: none;
 }
 
-.DropdownContent{
-    display:flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: #002452;
-    z-index: 1000;
+.DropdownContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #002452;
+  z-index: 1000;
 }
 
-.BookRoomButton{
-    text-decoration: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Volkhov';
-    line-height: 1;
-    cursor: pointer;
+.BookRoomButton {
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov";
+  line-height: 1;
+  cursor: pointer;
 }
 
-.BookRoomButton:hover{
-    opacity: 80%;
+.BookRoomButton:hover {
+  opacity: 80%;
 }
 
-.DropdownContent a{
-    color: white;
-    text-decoration: none;
-    position: relative;
-    padding: 10px 20px;
-    
+.DropdownContent a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 10px 20px;
 }
 
-.DropdownContent a:hover{
-    opacity: 80%;
-    
+.DropdownContent a:hover {
+  opacity: 80%;
 }
 
-.Feedback{
-    text-decoration: none;
-    border: none;
-    background: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Volkhov';
-    line-height: 1;
+.Feedback {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov";
+  line-height: 1;
 }
 
-.Feedback:hover{
-    opacity: 80%;
+.Feedback:hover {
+  opacity: 80%;
 }
 
-.SignInButton{
-    position: relative;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    border: none;
+.SignInButton {
+  right: -20vh;
+  cursor: pointer;
+  border: none;
 }
 
-.SignInButton:hover{
-    opacity: 80%;
+.SignInButton:hover {
+  opacity: 80%;
 }
 
-.SignInWord{
-    text-decoration: none;
-    color: black;
+.SignInWord {
+  text-decoration: none;
+  color: black;
 }
 
+.SignOutButton {
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+  border: none;
+}
+
+.Dashboard {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Volkhov";
+}
+
+.Dashboard:hover {
+  opacity: 80%;
+}

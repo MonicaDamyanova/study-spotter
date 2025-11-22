@@ -6,7 +6,7 @@ function FindSpot() {
 
   useEffect(() => {
     const fetchSeat = () => {
-      fetch("http://172.20.10.14:3000/seat") // <-- your server IP
+      fetch("http://localhost:3000/seat") // <-- your server IP
         .then((res) => res.json())
         .then((data) => {
           setOccupied(data.seatOccupied);

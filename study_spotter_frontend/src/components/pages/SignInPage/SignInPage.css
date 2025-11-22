@@ -1,0 +1,50 @@
+/* Container for the whole page */
+.SignInPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* vertically center */
+  background-color: #f5f5f5; /* light background */
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.SignInPage h1 {
+  margin-bottom: 20px;
+  color: #002452;
+  font-size: 32px;
+}
+
+/* Input fields */
+.SignInPage input {
+  width: 300px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Focus effect */
+.SignInPage input:focus {
+  border-color: #002452;
+  outline: none;
+}
+
+/* Button */
+.SignInPage button {
+  width: 320px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #002452;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.SignInPage button:hover {
+  opacity: 0.8;
+}
