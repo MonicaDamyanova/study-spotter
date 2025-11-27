@@ -21,7 +21,7 @@ function SignInPage({ setSignedIn }: SignInPageProps) {
   };
 
   return (
-    <div>
+    <div className="SignInPage">
       <h1>Sign In</h1>
       <input
         type="text"

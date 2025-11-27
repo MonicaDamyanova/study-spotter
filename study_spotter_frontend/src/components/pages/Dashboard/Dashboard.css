@@ -1,0 +1,78 @@
+.DashboardHome {
+  padding: 40px 60px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 100px); /* account for 100px header */
+  font-family: Arial, sans-serif;
+}
+
+.DashboardHome h1 {
+  margin-bottom: 10px;
+  color: #002452;
+}
+
+.DashboardHome p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Tabs / selector */
+.DashboardTabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.DashboardTab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #002452;
+  background-color: white;
+  color: #002452;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.DashboardTab:hover {
+  opacity: 0.85;
+}
+
+.DashboardTab.active {
+  background-color: #002452;
+  color: white;
+}
+
+/* Content wrapper */
+.DashboardContent {
+  max-width: 800px;
+}
+
+/* Card styling */
+.DashboardCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.DashboardCard h2 {
+  margin-top: 0;
+  color: #002452;
+  margin-bottom: 10px;
+}
+
+.DashboardCard p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.DashboardCard ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.DashboardCard li {
+  margin-bottom: 6px;
+  color: #333;
+}

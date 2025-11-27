@@ -4,7 +4,7 @@ import FindSpot from "./components/pages/FindSpot/FindSpot";
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Feedback from "./components/pages/Feedback/Feedback";
+import MaintenanceRequest from "./components/pages/MaintenanceRequest/MaintenanceRequest";
 import SignInPage from "./components/pages/SignInPage/SignInPage";
 import { useState } from "react";
 import Dashboard from "./components/pages/Dashboard/Dashboard";
@@ -20,7 +20,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/FindSpot" element={<FindSpot />} />
-            <Route path="/Feedback" element={<Feedback />} />
+            <Route
+              path="/MaintenanceRequest"
+              element={<MaintenanceRequest />}
+            />
             <Route
               path="/SignInPage"
               element={<SignInPage setSignedIn={setSignedIn} />}

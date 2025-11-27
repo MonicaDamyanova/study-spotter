@@ -1,29 +1,230 @@
-.TableParent {
+/* Page layout */
+.FindSpotPage {
+  min-height: calc(100vh - 100px); /* adjust for header height if needed */
+  background-color: #f5f5f5;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  min-height: 100vh;
+  padding: 40px 40px 80px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
+.FindSpotInfo {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.FindSpotInfo h1 {
+  margin: 0 0 12px;
+  color: #002452;
+}
+
+.FindSpotInfo p {
+  margin: 0 0 24px;
+  color: #444;
+}
+
+/* Legend */
+.Legend {
+  display: inline-flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.LegendItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.LegendDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.LegendDot.available {
+  background-color: #5cb85c;
+}
+.LegendDot.occupied {
+  background-color: #d9534f;
+}
+.LegendDot.inactive {
+  background-color: #b0b0b0;
+}
+
+/* Library layout: rows are spaced and offset horizontally */
+.LibraryLayout {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+
+/* Base styling for each row; individual rows tweak alignment */
+.TableRow {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+/* Row 1: push tables toward the left side */
+.TableRow.row1 {
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+/* Row 2: center main table */
+.TableRow.row2 {
+  justify-content: center;
+}
+
+/* Row 3: push tables toward the right side */
+.TableRow.row3 {
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+/* Base table style */
 .Table {
-  height: 350px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fdfdfd, #e7e7e7);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   display: flex;
-  width: 600px;
-  border: 2px solid black;
-  border-radius: 6px;
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 1px solid #ccc;
 }
 
-.Seat {
+/* Main calibrated table (unchanged size) */
+.MainTable {
+  height: 250px;
+  width: 500px;
+}
+
+/* Smaller decorative tables */
+.SmallTable {
+  height: 160px;
+  width: 260px;
+}
+
+/* Shared seat styling for original 8-seat table */
+.Seat,
+.Seat2,
+.Seat3,
+.Seat4,
+.Seat5,
+.Seat6,
+.Seat7,
+.Seat8 {
   width: 40px;
   height: 40px;
-  background: lightgreen;
   border-radius: 50%;
   position: absolute;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+}
+
+/* LIVE SENSOR SEAT – GEOMETRY UNCHANGED */
+.Seat {
+  background: lightgreen; /* overridden by inline style */
   top: -50px;
   left: 5%;
   transform: translateX(-50%);
+}
+
+/* Other original seats – geometry unchanged */
+.Seat2 {
+  background: #b0b0b0;
+  top: -50px;
+  left: 95%;
+  transform: translateX(-50%);
+}
+.Seat3 {
+  background: #b0b0b0;
+  bottom: -50px;
+  left: 5%;
+  transform: translateX(-50%);
+}
+.Seat4 {
+  background: #b0b0b0;
+  bottom: -50px;
+  left: 95%;
+  transform: translateX(-50%);
+}
+.Seat5 {
+  background: #b0b0b0;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+.Seat6 {
+  background: #b0b0b0;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}
+.Seat7 {
+  background: #b0b0b0;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Seat8 {
+  background: #b0b0b0;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Inactive seats for decorative tables */
+.SeatInactive {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #b0b0b0;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  border: 2px solid white;
+}
+
+/* Positions for inactive seats on small tables */
+.SmallTable .top-left {
+  top: -25px;
+  left: 15%;
+  transform: translateX(-50%);
+}
+.SmallTable .top-right {
+  top: -25px;
+  left: 85%;
+  transform: translateX(-50%);
+}
+.SmallTable .bottom-left {
+  bottom: -25px;
+  left: 15%;
+  transform: translateX(-50%);
+}
+.SmallTable .bottom-right {
+  bottom: -25px;
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+/* Two-side small tables */
+.SmallTable .left {
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+}
+.SmallTable .right {
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
 }

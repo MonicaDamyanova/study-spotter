@@ -75,7 +75,7 @@ function Header({ signedIn, setSignedIn }: HeaderProps) {
           )}
         </div>
 
-        <Link to="/Feedback" className="Feedback">
+        <Link to="/MaintenanceRequest" className="Feedback">
           Maintenance Request
         </Link>
 
